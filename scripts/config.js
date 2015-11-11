@@ -1,0 +1,1 @@
+var GOOGLE_API_KEY = 'AIzaSyBxPNRdeqlYP4st8UIlPFIZiYEB_oyk6rU';
