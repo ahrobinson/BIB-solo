@@ -1,0 +1,10 @@
+{
+  "name": "bus-it",
+  "version": "0.0.0",
+  "description": "Simple geolocation app",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.2"
+  },
+  "private": true
+}
