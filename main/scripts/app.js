@@ -1,9 +1,10 @@
 $(document).ready(function(){
   //initialize google map\\
+  var map;
   function initialize(){
-    var map = new google.maps.Map(document.getElementById('map'), {
+    map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: 29.9500, lng: -90.0667},
-      zoom: 12
+      zoom: 14
     })
   }
   initialize();
@@ -17,10 +18,15 @@ $(document).ready(function(){
     }
     navigator.geolocation.getCurrentPosition(function(position){
       var pos = {
-        lat: position.coordinates.latitude,
-        lng: position.coordinates.longitude
+        lat: position.coords.latitude,
+        lng: position.coords.longitude
       }
-      console.log(pos)
+      map.setCenter(pos)
+      var marker = new google.maps.Marker({
+        position: pos,
+        map: map,
+        title: 'You are here!'
+      });
     })
   }
   getLocation()
