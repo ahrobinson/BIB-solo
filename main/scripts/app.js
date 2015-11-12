@@ -1,4 +1,6 @@
 $(document).ready(function(){
+  //Get distance
+
   //initialize google map\\
   var map;
   function initialize(){
@@ -42,9 +44,14 @@ $(document).ready(function(){
                          .computeDistanceBetween(myPos,yoPos)
                          * 0.00062, -1);
           $('#distLeft').html(dist + ' miles away')
-          if(dist < 0.5){
-            console.log('You"re almost there!')
-          }
+            if(dist < 0.5){
+              console.log('You"re almost there!')
+              $('span').css('color','red')
+            } else {
+              $('span').css('color','black')
+            }
+
+          //end original if statement
         }
         //end of marker addListener function
       });

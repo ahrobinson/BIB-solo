@@ -35,11 +35,15 @@ h5 {
   position: absolute;
 }
 
-#input {
+#input, #distance{
   width: 23%;
   height: 30px;
   font-size: 12px;
   margin-top: 10px;
+}
+
+#distance {
+background-color: white;
 }
 
 #distLeft {
