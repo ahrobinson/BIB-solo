@@ -1,26 +1,52 @@
 html, body {
-  height: 100%;
-  width: 100%
+  height: 70%;
+  width: 100%;
   margin: 0;
   padding: 0;
  }
 
+h1 {
+  margin: 0;
+  transform: translateY(15px);
+}
+header {
+  height: 30%;
+  text-align: center;
+}
+
+h5 {
+  margin-left: 25px;
+}
+
 #map {
   height: 50%;
   width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 150px;
+  margin-top: 75px;
+}
+#mapHolder {
+  position: absolute;
+  height: 86%;
+  width: 100%;
+}
+#sidePanel {
+  height:86%;
+  width: 100%;
+  position: absolute;
 }
 
 #input {
-  width: 300px;
+  width: 23%;
   height: 30px;
-  font-size: 10px;
+  font-size: 12px;
+  margin-top: 10px;
 }
 
-#distTable {
-  margin-top: 30px;
-  height: 200px;
-  width: 200px;
-  border: 1px solid grey;
+#distLeft {
+  margin-left: 24%;
+  font-size: 50px;
+}
+
+#buttons{
+  margin-top: 50px;
 }
