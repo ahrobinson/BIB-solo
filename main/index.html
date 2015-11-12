@@ -3,8 +3,9 @@
   <head>
     <title>GPS Alarm</title>
     <link rel="stylesheet" href="style/style.css">
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry"></script>
+    <script src="libs/jquery.js"></script>
+    <script src="scripts/helpers.js"></script>
     <script src="scripts/app.js"></script>
   </head>
   <body>
@@ -17,10 +18,10 @@
     </section> -->
     <div id="map"></div>
 
-    <div id="input">
-      <input type="search"/>
-      <button>GO!</button>
-
+    <div id="inputDiv">
+      <h2>Where are you going?</h2>
+      <input id="input" />
     </div>
+    <span id="distLeft"></span>
   </body>
 </html>
