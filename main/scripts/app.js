@@ -2,7 +2,7 @@ $(document).ready(function(){
   //Get distance
 
   //initialize google map\\
-  var map;
+  var map, marker;
   function initialize(){
     map = new google.maps.Map(document.getElementById('map'), {
       //initial center is New Orleans, LA
@@ -26,7 +26,7 @@ $(document).ready(function(){
 
       //reset map center as you move
       map.setCenter(pos)
-      var marker = new google.maps.Marker({
+      marker = new google.maps.Marker({
         position: pos,
         map: map,
         draggable: true,
